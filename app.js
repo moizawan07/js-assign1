@@ -1,38 +1,29 @@
+var firstName = prompt("enter your name");
+var rollNo = prompt("enter your roll no");
+var english = +prompt("enter your eng marks");
+var math = +prompt("enter you math  marks");
+var science = +prompt("enter your sci marks");
+var physics = +prompt("enter your physics marks");
+var chemistry = +prompt("enter your chem marks");
 
-var name=prompt("Enter your name")
-var rollNo= prompt("Enter your roll no")
-var english = +prompt ("Insert your english marks");
-var urdu = +prompt ("Insert your urdu marks");
-var math = +prompt ("Insert your math marks");
-var chemistry = +prompt("Insert your chemistry marks");
-var physics = +prompt("Insert your physics marks");
+var totalMarks = (english + math + science + physics + chemistry);
+var percentage = (totalMarks/500*100)
 
-var calculateMarks = english + urdu + math + chemistry + physics;
-
-var percentage = (calculateMarks*100)/500;
-var grade;
-
-
-if (calculateMarks >=450 && calculateMarks <500){
-    alert("Name: "+ name + "\nRoll no: "+ rollNo + "\nMarks " + calculateMarks + "\ngrade A+"+ "\nPercentage " + percentage);
+if (percentage >=80 && percentage <100){
+   alert("NAME: " + firstName + "\nROLL NO: " + rollNo + "\nOBTAINED MARKS " + totalMarks + "\nPERCENTAGE " + percentage + "\nGRADE A+")
 }
-else if(calculateMarks >=400 && calculateMarks < 450){
-    alert("Name: "+ name + "\nRoll no: "+ rollNo + "\nMarks " + calculateMarks + "\ngrade A"+ "\nPercentage " + percentage);
+else if(percentage >=70 &&percentage <80){
+    alert("NAME: " + firstName + "\nROLL NO: " + rollNo + "\nOBTAINED MARKS " + totalMarks + "\nPERCENTAGE " + percentage + "\nGRADE B")
 }
-else if(calculateMarks >=350 && calculateMarks < 400){
-    alert("Name: "+ name + "\nRoll no: "+ rollNo + "\nMarks " + calculateMarks + "\ngrade B"+ "\nPercentage " + percentage);
+else if(percentage>=60 && percentage <70){
+    alert("NAME: " + firstName + "\nROLL NO: " + rollNo + "\nOBTAINED MARKS " + totalMarks + "\nPERCENTAGE " + percentage + "\nGRADE C")
 }
-else if(calculateMarks >=300 && calculateMarks < 350){
-    alert("Name: "+ name + "\nRoll no: "+ rollNo + "\nMarks " + calculateMarks + "\ngrade C " + "\nPercentage " + percentage);
+else if(percentage>=50 && percentage <60){
+   alert("NAME: " + firstName + "\nROLL NO: " + rollNo + "\nOBTAINED MARKS " + totalMarks + "\nPERCENTAGE " + percentage + "\nGRADE D")
 }
-else if(calculateMarks >=250 && calculateMarks < 300){
-    alert("Name: "+ name + "\nRoll no: "+ rollNo + "\nMarks " + calculateMarks + "\ngrade D"+ "\nPercentage " + percentage);
+else if(percentage>100){
+    alert("please inter valid numbers")
 }
-else if(calculateMarks >=500){
-    alert("Please enter valid marks")
-    }
 else{
-    alert("FAILED")
+    alert("failed")
 }
-
-// alert("Name: "+ name + "\nRoll no: "+ rollNo + "\nMarks" + calculateMarks + "\ngrade "+ grade + "\nPercentage" + percentage);
