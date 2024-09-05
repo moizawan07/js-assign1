@@ -14,26 +14,25 @@ var grade;
 
 
 if (calculateMarks >=450 && calculateMarks <500){
-    grade = "A+"
-}
-else if(calculateMarks >500){
-    alert("Please enter valid marks")
+    alert("Name: "+ name + "\nRoll no: "+ rollNo + "\nMarks " + calculateMarks + "\ngrade A+"+ "\nPercentage " + percentage);
 }
 else if(calculateMarks >=400 && calculateMarks < 450){
-    grade ="A"
+    alert("Name: "+ name + "\nRoll no: "+ rollNo + "\nMarks " + calculateMarks + "\ngrade A"+ "\nPercentage " + percentage);
 }
 else if(calculateMarks >=350 && calculateMarks < 400){
-    grade = "B" 
+    alert("Name: "+ name + "\nRoll no: "+ rollNo + "\nMarks " + calculateMarks + "\ngrade B"+ "\nPercentage " + percentage);
 }
 else if(calculateMarks >=300 && calculateMarks < 350){
-    grade = "C"
+    alert("Name: "+ name + "\nRoll no: "+ rollNo + "\nMarks " + calculateMarks + "\ngrade C " + "\nPercentage " + percentage);
 }
 else if(calculateMarks >=250 && calculateMarks < 300){
-    grade = "D"
+    alert("Name: "+ name + "\nRoll no: "+ rollNo + "\nMarks " + calculateMarks + "\ngrade D"+ "\nPercentage " + percentage);
 }
+else if(calculateMarks >=500){
+    alert("Please enter valid marks")
+    }
 else{
     alert("FAILED")
-    grade = "F"
 }
 
-alert("Name: "+ name + "\nRoll no: "+ rollNo + "\nMarks" + calculateMarks + "\ngrade "+ grade + "\nPercentage" + percentage);
+// alert("Name: "+ name + "\nRoll no: "+ rollNo + "\nMarks" + calculateMarks + "\ngrade "+ grade + "\nPercentage" + percentage);
